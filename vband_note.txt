@@ -1,0 +1,5 @@
+The vband dongle is just a keyboard adaptor for a code key, turning the key into 
+a 2-button keyboard.   It produces keyboard events corresponding to pressing and lifting the left and right Ctrl keys.
+
+
+
