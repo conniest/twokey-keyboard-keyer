@@ -8,7 +8,7 @@ DOT_TIME = 0.2  # Duration of a dit (1 unit of time)
 DASH_TIME = DOT_TIME * 3  # Duration of a dah (3 units of time)
 SPACE_BETWEEN_DITS = DOT_TIME * 3  # Space after a dit (3 dot times)
 SPACE_BETWEEN_DAHS = DOT_TIME * 6  # Space after a dah (6 dot times)
-SPACE_BETWEEN_TONES = DOT_TIME  # Space between alternating tones (1 dot time)
+SPACE_BETWEEN_TONES = 0  
 
 # Audio settings
 SAMPLE_RATE = 44100  # Audio sample rate (samples per second)
