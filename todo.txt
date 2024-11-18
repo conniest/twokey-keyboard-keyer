@@ -1,0 +1,6 @@
+add parameters for speed, spacing (ie Farnsworth), left and right handed,
+iambic A and iambic B
+
+make it fully iambic (so that on releasing both paddles it 
+ends consistently with either dah or dit
+depending on A or B)
