@@ -32,7 +32,7 @@ Explanation of the Code:
         Pressing the Esc key will stop the listener and exit the loop.
 
 To Run:
-    sudo python3 ./connie_keyer.py
+    sudo python3 ./ctlkey_keyer.py
 
 
 
