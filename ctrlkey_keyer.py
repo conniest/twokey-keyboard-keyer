@@ -8,6 +8,10 @@ an iambic keyer script for linux using Ctrl_L for dah and Ctrl_R for dit.
 When both keys are pressed the output should iterate between a dit followed by a space equal to 3 dits followed by a dah followed by a space equal to 6 dits. 
 If only one key is pressed, then do the following: Holding down Ctrl_R should produce a sequence of dits. Holding down Ctrl_L should produce a sequence of dahs.  In all cases: every dit should always be followed by a space equal in duration to 3 dits and every dah should be followed by a space equal in duration to 6 dits.  
 Sound should be mono and alsa should be used.   Dits and dahs should have the same pitch, but dahs should have 3 times the duration of dits.   Dits and dahs and spaces should never overlap.
+
+TODO: take wpm as an argument and calculate durations from that
+TODO: update logic to enable true iambic behavior, and take an option for A or B
+TODO: take sidetone pitch as an argument, with a reasonable default
 '''
 
 import time
@@ -16,8 +20,9 @@ import numpy as np
 from pynput import keyboard
 
 # Constants for timing (in seconds)
-DOT_TIME = 0.1  # Duration of a dit (1 unit of time)
-DASH_TIME = DOT_TIME * 3  # Duration of a dah (3 units of time)
+#
+DOT_TIME = 0.05  # Duration of a dit (1 unit of time)
+DASH_TIME = DOT_TIME * 3.15  # Duration of a dah (3.15 units of time)
 SPACE_BETWEEN_DITS = DOT_TIME * 3  # Space after a dit (3 dot times)
 SPACE_BETWEEN_DAHS = DOT_TIME * 6  # Space after a dah (6 dot times)
 SPACE_BETWEEN_TONES = 0  # between alternating pairs of dahs and dits when squeezed
