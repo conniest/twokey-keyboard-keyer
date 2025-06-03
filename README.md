@@ -17,9 +17,10 @@ Dependencies: pygame pynput numpy
 Explanation of the Code:
 
     Timing Constants:
-        DOT_TIME represents the duration of a dit (0.2 seconds).
-        DASH_TIME is 3 times the duration of a dit (0.6 seconds) and represents the duration of a dah.
+        DOT_TIME represents the duration of a dit.
+        DASH_TIME is 3 times the duration of a dit and represents the duration of a dah.
         The spaces between dits and dahs are set to 3 and 6 dits, respectively.
+        (TODO: refine this, make wpm an option)
 
     Audio Generation:
         The generate_tone function generates a sine wave at a frequency of 600 Hz for both dits and dahs. It uses numpy to generate the audio samples and pygame to play them.
@@ -32,7 +33,7 @@ Explanation of the Code:
         If only Ctrl_R is pressed, it generates a continuous sequence of dits, each followed by a space of 3 dits.
         If only Ctrl_L is pressed, it generates a continuous sequence of dahs, each followed by a space of 6 dits.
         If both Ctrl_R and Ctrl_L are pressed simultaneously, the script alternates between dits and dahs, maintaining their respective timings and spaces.
-
+        (TODO: refine this to reflect true iambic behavior, and make A/B an option)
     Timing Control:
         The time.sleep function ensures that the spaces between dits, dahs, and alternating tones are respected and that there is no overlap between dits, dahs, or spaces.
 
