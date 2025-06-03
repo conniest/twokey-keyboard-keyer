@@ -1,8 +1,16 @@
 ctrlkey_keyer.py
 
-Python script provides an iambic keyer where Ctrl_R and Ctrl_L produce dits and dahs with appropriate spacing, while alternating properly when both keys are pressed simultaneously. The sound is generated using pygame and played via ALSA on Linux in mono output.
+Works with vband dongle (or clone) so you can practice sending with paddles on your computer.
+You can also just use a couple of keys on your keyboard as paddles.
 
-The Vband dongle generates Ctrl_R and Ctrl_L keypress events, so this will work with it locally
+Plug the dongle into a USB port on your computer, then plug your paddles into the dongle.
+
+Python script provides an iambic morse code keyer 
+where Ctrl_R and Ctrl_L produce dits and dahs with appropriate spacing, 
+and alternating when both keys are pressed simultaneously. The sound is generated using pygame and played via ALSA on Linux in mono output.
+
+The Vband dongle generates Ctrl_R and Ctrl_L keypress events, 
+so this will work with it locally
 
 Dependencies: pygame pynput numpy
 
